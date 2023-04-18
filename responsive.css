@@ -69,6 +69,9 @@
     .dr-content button {
         font-size: 13px;
     }
+    .delivery p {
+        font-size: 14px;
+    }
     .width {
         width: 90% !important;
         margin: 0px auto;
@@ -126,6 +129,9 @@
     }
     .dr-content p {
         font-size: 12px;
+    }
+    .delivery p {
+        font-size: 15px;
     }
     .width {
         width: 90% !important;
