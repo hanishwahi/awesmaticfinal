@@ -1,0 +1,134 @@
+@media screen and (min-width:768px) and (max-width:992px) {
+    .slick-next {
+        right: 9px !important;
+    }
+    .social {
+        padding: 6px 11px;
+    }
+    .social p {
+        font-size: 13px;
+    }
+    .slider-content {
+        text-align: center;
+    }
+    .nav1 ul li a {
+        font-size: 20px;
+    }
+    .head-img img {
+        width: 30%;
+    }
+    .width {
+        width: 70% !important;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .slick-next {
+        right: 0px !important;
+    }
+    .slick-initialized .slick-slide {
+        margin: 0 6px 0 6px;
+    }
+    .country select {
+        display: none;
+    }
+    .search select {
+        font-size: 12px;
+    }
+    p.text-white {
+        font-size: 11px;
+    }
+    .footer-content ul li a {
+        font-size: 14px;
+    }
+    .bestsell-title h1 {
+        font-size: 18px;
+    }
+    .slider-content {
+        text-align: center;
+    }
+    .slider-content h1 {
+        font-size: 40px;
+    }
+    .dr-content h3 {
+        font-size: 14px;
+    }
+    .dr-content h1 {
+        font-size: 22px;
+    }
+    .dr-content p {
+        font-size: 12px;
+    }
+    .dr-content button {
+        font-size: 13px;
+    }
+    .width {
+        width: 90% !important;
+        margin: 0px auto;
+    }
+    .signup-para p {
+        font-size: 14px !important;
+    }
+    .btn-bg {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .head-img img {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:767px) {
+    .slick-next {
+        right: -6px !important;
+    }
+    .social {
+        padding: 6px 7px;
+    }
+    .dr-content h3 {
+        font-size: 14px;
+    }
+    .dr-content h1 {
+        font-size: 22px;
+    }
+    .dr-content p {
+        font-size: 12px;
+    }
+    .width {
+        width: 90% !important;
+        margin: 0px auto;
+    }
+    .social p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:412px) {
+    .bestsell-title h1 {
+        font-size: 17px;
+    }
+    .sell-title h1 {
+        font-size: 18px;
+    }
+    .width {
+        width: 100%!important;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .search select {
+        font-size: 12px;
+    }
+    .delivery p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:995px) {
+    .nav1 ul li a {
+        font-size: 14px;
+    }
+}
