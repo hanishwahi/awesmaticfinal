@@ -17,9 +17,15 @@
     .head-img img {
         width: 30%;
     }
+    .nav1 ul li a {
+        font-size: 16px;
+    }
     .width {
         width: 70% !important;
         margin: 0px auto;
+    }
+    .profile-width {
+        width: 40% !important;
     }
 }
 
@@ -73,6 +79,30 @@
     .btn-bg {
         font-size: 14px !important;
     }
+    .exist-cs {
+        font-size: 14px;
+    }
+    .font label {
+        font-size: 14px;
+    }
+    .forget-pswd a {
+        font-size: 14px;
+    }
+    .btn-login button {
+        font-size: 14px !important;
+    }
+    .register p {
+        font-size: 14px;
+    }
+    .social-login a {
+        font-size: 16px;
+    }
+    .profile-width {
+        width: 60% !important;
+    }
+    .profile-bg a {
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1199px) {
@@ -103,6 +133,12 @@
     }
     .social p {
         font-size: 13px;
+    }
+    .profile-width {
+        width: 40% !important;
+    }
+    .profile-bg a {
+        font-size: 15px;
     }
 }
 

@@ -367,3 +367,47 @@ html {
     width: 120px;
     margin-bottom: 40px;
 }
+
+.exist-cs {
+    font-size: 22px;
+}
+
+.social-login a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.profile-bg {
+    background-color: #f4eef4;
+    padding: 6px 0px;
+    margin-bottom: 5px;
+}
+
+.profile-bg a {
+    color: #000;
+    margin: 5px 0px;
+    text-decoration: none !important;
+}
+
+.profile-bg a:hover {
+    color: #690569;
+}
+
+.modal-header {
+    padding: 0px !important;
+    border-bottom: none !important;
+}
+
+.profile-width {
+    width: 20% !important;
+}
+
+.signup-modal-2 button:hover {
+    background-color: #fff !important;
+    color: #850085 !important;
+    border: 1px solid #850085;
+}
+
+.modal-open {
+    padding: 0px !important;
+}
