@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a46d0a2aba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- header  -->
+    <div class="container-fluid">
+        <div class="container-xl">
+            <div class="row py-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-7 mb-3 head-img px-0 order-0 order-sm-0 order-lg- 0 ">
+                    <a href="/"><img src="/Images/logo.png" alt=""></a>
+                </div>
+
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-3 px-0 order-3 order-sm-3 order-lg-1">
+                    <div class="row mx-0 d-flex flex-wrap search">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-6 p-0 m-0">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-4 text-center d-flex align-items-center justify-content-end px-0  ">
+                            <select name="" id="">
+                                <option value="">All Categories</option>
+                                <option value="">Option1</option>
+                                <option value="">Option2</option>    
+                            </select>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-2 text-end p-0  ">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-5 d-flex mb-3 px-0 text-right order-2 order-sm-2 order-sm-2 d-flex align-items-center justify-content-end">
+                    <div class="col-lg-6 col-md-8 col-sm-7 px-md-3 country px-0">
+                        <select class="border-0 outline-0" name="" id="">
+                            <option value="">INDIA</option>
+                            <option value="">USA</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-12 col-md-4 col-sm-5 text-right cart px-0 d-flex align-items-center justify-content-end ">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-regular fa-user px-2"></i>
+                       </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade mt-5 py-4 px-0 " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog profile-width mx-5 float-end" role="document">
+                                <div class="modal-content ">
+
+                                    <div class="modal-body text-start  ">
+                                        <div class="col profile-bg px-2">
+                                            <a href="">Your wishlist</a>
+                                        </div>
+                                        <div class="col profile-bg px-2">
+                                            <a href="">Your Orders</a>
+                                        </div>
+                                        <div class="col profile-bg px-2">
+                                            <a href="">Your Account</a>
+                                        </div>
+
+                                        <div class="d-flex justify-content-center">
+                                            <div class="col-12 px-0 btn-login">
+                                                <button type="button" class="btn btn-bg col-12 btn-lg">Logout</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-heart px-2"></i>
+                        <i class="fa-solid fa-bag-shopping px-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- navbar  -->
+    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <img height="30px" src="/Images/logo.png" alt="">
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="navbar-nav ">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Today's Deal</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Shop By</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Best Sellers</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Makeup</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Skin</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Hair</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Appliances</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Bath & Body</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Mom & Baby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Health & Wellness</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid bg-nav">
+        <div class="container-xl">
+            <div class="row d-flex justify-content-lg-around ">
+                <nav class=" navbar-expand-lg d-flex justify-content-lg-center navbar-light">
+
+                    <button class="btn hamburger shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <img style="filter: invert();" height="30px" src="/Images/menu.png" alt="">
+                      </button>
+
+                    <div class="collapse justify-content-around navbar-collapse nav1" id="navbarNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Today's Deal</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Shop By</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Best Sellers</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Makeup</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Skin</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Hair</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Appliances</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Bath & Body</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Mom & Baby</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Health & Wellness</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- catergory banner  -->
+
+
+    <div class="container-fluid  category-banner mb-5">
+        <div class="container-xl">
+            <div class="row category-banner-content p-4">
+                <div class="col-xl-6 py-5">
+                    <h1 class="text-uppercase pb-4">Home /<span>Shop by</span></h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam tempore est dicta aperiam, autem maiores tempora beatae quam autem maiores tempora beatae quam.
+                    </p>
+                </div>
+                <div class="col-xl-6"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- shop by category  -->
+    <div class="container-fluid">
+        <div class="container-xl">
+
+            <div class="row px-5 d-flex justify-content-around flex-wrap mb-4">
+                <div class="col-lg-2 col-sm-6 col-md-3 col-12 shop text-center sell-bg px-0  ">
+                    <img width="80% " src="/Images/1.png " alt=" ">
+                    <h2 class="mt-2 ">Bath & Body</h2>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-3 col-12 shop text-center sell-bg px-0 ">
+                    <img width="80% " src="/Images/1.png " alt=" ">
+                    <h2 class="mt-2 ">Bath & Body</h2>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-3 col-12 shop text-center sell-bg px-0">
+                    <img width="80% " src="/Images/1.png " alt=" ">
+                    <h2 class="mt-2 ">Bath & Body</h2>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-3 col-12 shop text-center sell-bg px-0 ">
+                    <img width="80% " src="/Images/1.png " alt=" ">
+                    <h2 class="mt-2 ">Bath & Body</h2>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-3 col-12 shop text-center sell-bg px-0">
+                    <img width="80% " src="/Images/1.png " alt=" ">
+                    <h2 class="mt-2 ">Bath & Body</h2>
+                </div>
+
+            </div>
+
+
+            <div class="row px-5 d-flex justify-content-around flex-wrap">
+                <div class="col-lg-2 col-sm-6 col-md-3 col-12 shop text-center sell-bg px-0" ">
+                    <img width="80% " src="/Images/1.png " alt=" ">
+                    <h2 class="mt-2 ">Bath & Body</h2>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-3 col-12 shop text-center sell-bg px-0 " ">
+                    <img width="80% " src="/Images/1.png " alt=" ">
+                    <h2 class="mt-2 ">Bath & Body</h2>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-3 col-12 shop text-center sell-bg px-0" ">
+                    <img width="80% " src="/Images/1.png " alt=" ">
+                    <h2 class="mt-2 ">Bath & Body</h2>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-3 col-12 shop text-center sell-bg px-0 " ">
+                    <img width="80% " src="/Images/1.png " alt=" ">
+                    <h2 class="mt-2 ">Bath & Body</h2>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-md-3 col-12 shop text-center sell-bg px-0" ">
+                    <img width="80% " src="/Images/1.png " alt=" ">
+                    <h2 class="mt-2 ">Bath & Body</h2>
+                </div>
+                 
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- best selling products  -->
+    <div class="container-fluid py-5 ">
+        <div class="container-xl py-3 ">
+            <div class="row ">
+                <div class="col text-center bestsell-title mb-4 text-uppercase ">
+                    <h1>Best Selling Products</h1>
+                </div>
+            </div>
+
+
+
+            <div class="autoplay px-5 ">
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs1.png " alt=" ">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs2.png " alt=" ">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs3.png " alt=" ">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs4.png " alt=" ">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs4.png " alt=" ">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs4.png " alt=" ">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- category in focus  -->
+    <div class="container-fluid py-5 ">
+        <div class="container-xl py-3 ">
+            <div class="row ">
+                <div class="col text-center bestsell-title mb-4 text-uppercase ">
+                    <h1>Category in focus</h1>
+                </div>
+            </div>
+
+
+
+            <div class="category px-5 ">
+                <div class=" ">
+                    <img width="100% "  src="/Images/category.png " alt=" ">
+                </div>
+                <div class=" ">
+                    <img width="100% " src="/Images/category.png " alt=" ">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Everyday Essentials  -->
+    <div class="container-fluid py-5 ">
+        <div class="container-xl py-3 ">
+            <div class="row ">
+                <div class="col text-center bestsell-title mb-4 text-uppercase ">
+                    <h1>Everyday Essentials</h1>
+                </div>
+            </div>
+
+
+
+            <div class="autoplay px-5 ">
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs1.png " alt=" ">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs2.png " alt=" ">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs3.png " alt=" ">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs4.png " alt=" ">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs4.png " alt=" ">
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 seller ">
+                    <img width="100% " src="/Images/bs4.png " alt=" ">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- footer  -->
+
+    <div class="container-fluid footer-bg ">
+        <div class="container-xl ">
+            <div class="row delivery d-flex justify-content-lg-around pt-5 flex-wrap pb-3 ">
+                <div class="col-lg-2 col-sm-4 col-6 d-flex align-items-center mb-3 px-0 ">
+                    <img height="50px " src="/Images/i1.png " alt=" ">
+                    <p class="px-2 ">Best Customer <br> Experience</p>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 d-flex align-items-center mb-3 px-0 ">
+                    <img height="50px " src="/Images/i2.png " alt=" ">
+                    <p class="px-2 ">Cash on<br> Delivery</p>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 d-flex align-items-center mb-3 px-0 ">
+                    <img height="50px " src="/Images/i3.png " alt=" ">
+                    <p class="px-2 ">Delivery in<br> 3-5 Days</p>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 d-flex align-items-center mb-3 px-0 ">
+                    <img height="50px " src="/Images/i4.png " alt=" ">
+                    <p class="px-2 ">Assured <br>Premium Quality</p>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 d-flex align-items-center mb-3 px-0 ">
+                    <img height="50px " src="/Images/i5.png " alt=" ">
+                    <p class="px-2 ">7 Days <br>Return Policy</p>
+                </div>
+            </div>
+            <div class="row footer mt-3 ">
+
+                <div class="col-lg-2 col-md-6 col-sm-6 mt-3 footer-content ">
+                    <h1 class="mb-4 ">Categories</h1>
+                    <ul>
+                        <li><a href=" "> Cleansers & Toners</a></li>
+                        <li><a href=" ">Moisturisers</a></li>
+                        <li><a href=" ">Body Care </a></li>
+                        <li><a href=" ">Eyes, Lips & Neck </a></li>
+                        <li><a href=" ">Rebalancing Oils</a></li>
+                        <li><a href=" ">Self Tanners </a></li>
+                        <li><a href=" ">Make-Up </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 mt-3 footer-content ">
+                    <h1 class="mb-4 ">Service</h1>
+                    <ul>
+                        <li><a href=" "> Contact Us </a></li>
+                        <li><a href=" "> Track Your Order</a></li>
+                        <li><a href=" "> Returns Policy </a></li>
+                        <li><a href=" "> Delivery Information </a></li>
+                        <li><a href=" "> Loyalty Program </a></li>
+                        <li><a href=" "> Help & FAQ</a> </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mt-3 footer-content ">
+                    <h1 class="mb-4 ">News Letters</h1>
+                    <p>Sign up for our mailing list to be the first to receive updates from us about new products</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-3 footer-content ">
+                    <h2 class="mb-4 ">AWESMATIC</h2>
+                    <div class="col d-flex align-items-center mb-3 ">
+                        <img height="25px " src="/Images/l1.png " alt=" ">
+                        <p class="px-2 ">Lorem Ipsum is simply of the industry Lorem Ipsum</p>
+                    </div>
+                    <div class="col d-flex align-items-center mb-3 ">
+                        <img height="25px " src="/Images/l2.png " alt=" ">
+                        <p class="px-2 ">info@logoname.co.in</p>
+                    </div>
+                    <div class="col d-flex align-items-center mb-3 ">
+                        <img height="25px " src="/Images/l3.png " alt=" ">
+                        <p class="px-2 ">(+91)-1800-18000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-4 ">
+                <div class="col ">
+                    <p class="text-white ">© 2022 AWESMATIC, Inc. All rights reserved. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4 " crossorigin="anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+
+    <script>
+        $('.banner-product').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [{
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                },
+            }, {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }]
+        });
+
+
+        $('.category').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [{
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                },
+            }, {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }]
+        });
+        $('.autoplay').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [{
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                }
+            }, {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                },
+            }, {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }]
+        });
+    </script>
+</body>
+
+</html>

@@ -1,6 +1,7 @@
 body,
 html {
     overflow-x: hidden;
+    padding: 0px !important;
 }
 
 .cart i {
@@ -57,79 +58,9 @@ html {
     border-radius: 20px;
 }
 
-.slider-content h1 {
-    font-size: 65px;
-    font-weight: 800;
-    margin-bottom: 31px;
-}
-
-.slider-bg {
-    background-image: linear-gradient( to bottom, #efbbff, #fff) !important;
-}
-
-.slider-content p {
-    font-size: 28px;
-    font-weight: 300;
-    line-height: 26px;
-    margin-bottom: 60px;
-}
-
-.slider-content button {
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    outline: none !important;
-    background-image: linear-gradient( to right, #b407b9, #d83ead);
-    padding: 7px 18px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.main-arrow {
-    position: relative;
-}
-
-.arrow-left {
-    position: absolute;
-    top: 56%;
-    left: 2%;
-    font-size: 32px;
-    color: #690569;
-}
-
-.arrow-right {
-    position: absolute;
-    left: 95%;
-    top: 56%;
-    font-size: 32px;
-    color: #690569;
-}
-
-.product-arrow {
-    position: relative;
-}
-
-.productarrow-left {
-    position: absolute;
-    top: 40%;
-    left: 2%;
-    font-size: 22px;
-    background-color: #de6fde;
-    color: #fff;
-    padding: 5px 9px;
-    border-radius: 50%;
-}
-
-.productarrow-right {
-    position: absolute;
-    left: 95%;
-    top: 40%;
-    font-size: 22px;
-    background-color: #de6fde;
-    color: #fff;
-    padding: 5px 9px;
-    border-radius: 50%;
+.banner-prdt-bg {
+    background-color: #fff;
+    padding: 20px;
 }
 
 .shop img {
@@ -410,4 +341,34 @@ html {
 
 .modal-open {
     padding: 0px !important;
+}
+
+.hamburger {
+    display: none !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+
+.testominial-img {
+    margin-bottom: -90px;
+}
+
+.category-banner {
+    background-image: url('/Images/category-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.category-banner-content h1 {
+    font-size: 34px;
+}
+
+.category-banner-content span {
+    font-size: 34px;
+    font-weight: 700;
 }
