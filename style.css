@@ -205,6 +205,11 @@ html {
     font-weight: 300;
 }
 
+.footer ::placeholder {
+    color: #fff;
+    font-weight: 300;
+}
+
 .delivery {
     border-bottom: 1px solid #fff;
 }
@@ -278,13 +283,6 @@ html {
     background-color: #f2f2f2;
 }
 
-.btn-bg {
-    background-color: #b407b9 !important;
-    color: #fff !important;
-    font-size: 17px !important;
-    font-weight: 500 !important;
-}
-
 .login_oueter {
     width: 360px;
     max-width: 100%;
@@ -324,23 +322,8 @@ html {
     color: #690569;
 }
 
-.modal-header {
-    padding: 0px !important;
-    border-bottom: none !important;
-}
-
 .profile-width {
     width: 20% !important;
-}
-
-.signup-modal-2 button:hover {
-    background-color: #fff !important;
-    color: #850085 !important;
-    border: 1px solid #850085;
-}
-
-.modal-open {
-    padding: 0px !important;
 }
 
 .hamburger {
@@ -371,4 +354,118 @@ html {
 .category-banner-content span {
     font-size: 34px;
     font-weight: 700;
+}
+
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.btn-bg {
+    background-color: #fff !important;
+    color: #850085 !important;
+    border: 1px solid #850085 !important;
+}
+
+.btn-bg2 {
+    background-color: #d83ead !important;
+    color: #fff !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.custom-drop .dropdown-content {
+    right: 0px;
+    max-width: 200px !important;
+}
+
+.drop:before {
+    content: '';
+    position: absolute;
+    right: 10%;
+    top: -5px;
+    height: 10px;
+    width: 10px;
+    background: white;
+    transform: rotate(45deg);
+    box-shadow: -1px -1px 1px grey;
+}
+
+.dropdown-content {
+    box-shadow: 0px 0px 1px grey;
+}
+
+.addToCart p {
+    font-size: 12px;
+}
+
+.addToCart h4 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.addToCart img {
+    border: 1px solid #ccc;
+}
+
+.addToCart button {
+    background-color: #b407b9;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.page-link {
+    color: #850085 !important;
+    border: none !important;
+    font-size: 24px !important;
+}
+
+.page-link:hover {
+    background-color: #850085;
+    color: #fff;
+}
+
+.custom-drop-logout .dropdown-content {
+    right: 0px;
+    min-width: 270px !important;
+}
+
+.logout-drop:before {
+    content: '';
+    position: absolute;
+    right: 7%;
+    top: -5px;
+    height: 10px;
+    width: 10px;
+    background: white;
+    transform: rotate(45deg);
+    box-shadow: -1px -1px 1px grey;
 }
