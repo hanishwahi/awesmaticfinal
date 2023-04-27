@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Book</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/a46d0a2aba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+</head>
+
+
+<body>
+    <!-- header  -->
+    <div class="container-fluid">
+        <div class="container-xl">
+            <div class="row py-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-7 mb-3 head-img px-0 order-0 order-sm-0 order-lg- 0">
+                    <a href="/"><img src="/Images/logo.png" alt="" /></a>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-3 px-0 order-3 order-sm-3 order-lg-1">
+                    <div class="row mx-0 d-flex flex-wrap search">
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-6 p-0 m-0">
+                            <input type="text" placeholder="Search..." />
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-4 text-center d-flex align-items-center justify-content-end px-0">
+                            <select name="" id="">
+                  <option value="">All Categories</option>
+                  <option value="">Option1</option>
+                  <option value="">Option2</option>
+                </select>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-2 text-end p-0">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-5 d-flex mb-3 px-0 text-right order-2 order-sm-2 order-sm-2 d-flex align-items-center justify-content-end">
+                    <div class="col-lg-6 col-md-8 col-sm-7 px-md-3 country px-0">
+                        <select class="border-0 outline-0" name="" id="">
+                <option value="">INDIA</option>
+                <option value="">USA</option>
+              </select>
+                    </div>
+                    <div class="col-lg-6 col-12 col-md-4 col-sm-5 text-right cart px-0 d-flex align-items-center justify-content-end">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-regular fa-user px-2"></i>
+              </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade mt-5 py-4 px-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog profile-width mx-5 float-end" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-start">
+                                        <div class="col profile-bg px-2">
+                                            <a href="">Your wishlist</a>
+                                        </div>
+                                        <div class="col profile-bg px-2">
+                                            <a href="">Your Orders</a>
+                                        </div>
+                                        <div class="col profile-bg px-2">
+                                            <a href="">Your Account</a>
+                                        </div>
+
+                                        <div class="d-flex justify-content-center">
+                                            <div class="col-12 px-0 btn-login">
+                                                <button type="button" class="btn btn-bg col-12 btn-lg">
+                            Logout
+                          </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-heart px-2"></i>
+                        <i class="fa-solid fa-bag-shopping px-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar  -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <img height="30px" src="/Images/logo.png" alt="" />
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Today's Deal</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Shop By</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Best Sellers</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Makeup</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Skin</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Hair</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Appliances</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Bath & Body</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Mom & Baby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Health & Wellness</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-nav">
+        <div class="container-xl">
+            <div class="row d-flex justify-content-lg-around">
+                <nav class="navbar-expand-lg d-flex justify-content-lg-center navbar-light">
+                    <button class="btn hamburger shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <img
+                style="filter: invert()"
+                height="30px"
+                src="/Images/menu.png"
+                alt=""
+              />
+            </button>
+
+                    <div class="collapse justify-content-around navbar-collapse nav1" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Today's Deal</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Shop By</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Best Sellers</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Makeup</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Skin</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Hair</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Appliances</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Bath & Body</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link" href="#">Mom & Baby</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Health & Wellness</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- address book  -->
+    <div class="container-fluid my-5">
+        <div class="container-xl">
+            <div class="row mb-3">
+                <div class="col address-head">
+                    <p>Your account/ <span>address book</span> </p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col address-book">
+                    <h1>Your Addresses </h1>
+                </div>
+            </div>
+
+
+            <div class="row  flex-wrap">
+                <div class="card col-xl-4 col-lg-4 col-md-6 col-sm-6  col-12 mb-3">
+                    <div class="card-body address-detail d-flex align-items-center  justify-content-center">
+                        <div>
+                            <div class="col text-center add-address">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="col  text-center add-address">
+                                <h4>Add Address</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-3">
+                    <div class="card-body address-detail">
+                        <div class="col mb-5 ">
+                            <h2>Ajay Kumar</h2>
+                            <p># 333, Shivalik Vihar Near Shiv Mandir Zirakpur, Punjab 140603 INDIA </p>
+                            <h3>Phone Number: <span>99999-00000</span></h3>
+                        </div>
+                        <div class="row  address-inner px-1">
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12  px-0 ">
+                                <button class="w-100 text-start">Edit</button>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 px-0">
+                                <button class="w-100 text-start">Remove</button>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12  px-0">
+                                <button class="w-100 text-start">Set as Default</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card-body address-detail">
+                        <div class="col mb-5 ">
+                            <h2>Ajay Kumar</h2>
+                            <p># 333, Shivalik Vihar Near Shiv Mandir Zirakpur, Punjab 140603 INDIA</p>
+                            <h3>Phone Number: <span>99999-00000</span></h3>
+                        </div>
+                        <div class="row  address-inner  px-1">
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12  px-0 ">
+                                <button class="w-100 text-start">Edit</button>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 px-0">
+                                <button class="w-100 text-start">Remove</button>
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12  px-0">
+                                <button class="w-100 text-start">Set as Default</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
