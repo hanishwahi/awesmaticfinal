@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WishList</title>
+    <title>Find A Store</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
 
@@ -72,9 +72,7 @@
 
                                         <div class="d-flex justify-content-center">
                                             <div class="col-12 px-0 btn-login">
-                                                <button type="button" class="btn btn-bg col-12 btn-lg">
-                            Logout
-                          </button>
+                                                <button type="button" class="btn btn-bg col-12 btn-lg">Logout</button>
                                             </div>
                                         </div>
                                     </div>
@@ -184,118 +182,82 @@
         </div>
     </div>
 
-    <!-- wishlist  -->
 
-    <div class="container-fluid py-5 ">
+    <!-- find a store  -->
+
+    <div class="container-fluid py-5">
         <div class="container-xl">
-            <div class="row mb-3 px-lg-5 px-md-5 ">
-                <div class="col wishlist-head px-0">
-                    <p>Home/ <span>WishList</span> </p>
-                </div>
-            </div>
-            <div class="row mb-3 px-lg-5 px-md-5 text-end">
-                <div class="dropdown px-0">
-                    <button class="btn dropdown-toggle border fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Default Sorting
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row justify-content-center ">
-                <div class="col-xl-11 col-lg-11 col-md-11 wishlist-outer">
-                    <div class="wishlist-product-head">
-                        <div class="row d-flex align-items-center border-bottom mt-3 wishlist ">
-                            <div class="col-lg-10 col-md-10 col-sm-10 col-4 text-center ">
-                                <h2>Product</h2>
-                            </div>
-                            <div class="col-lg-2 col-md-2 col-sm-2 col-4   ">
-                                <h2>Unit Price</h2>
-                            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row mb-3">
+                        <div class="col text-center find-store">
+                            <h1>Find A Store Near You </h1>
                         </div>
                     </div>
-                    <!-- Product  -->
-                    <div class="row d-flex align-items-center border-bottom mt-3 wishlist">
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-2 text-end ">
-                            <div class="form-check float-end">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-10 d-flex   align-items-center gap-2 mb-2">
-                            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 pe-0 border">
-                                <img width="100%" src="/Images/11.png" alt="">
-                            </div>
-                            <div class="col-xl-11 col-lg-11 col-sm-11 col-12 add-remove">
-                                <h5>Drive Me Glazy Lip Gloss</h5>
-                                <div class="d-flex gap-3">
-                                    <a href="">Add to cart</a>
-                                    <a href="">Remove</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-12 d-flex align-items-center text-center py-3">
-                            <h3 class="price col-6">Unit Price:</h3>
-                            <h4>Rs 400/-</h4>
-                        </div>
-
-                    </div>
-                    <div class="row d-flex align-items-center border-bottom mt-3 wishlist">
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-2 text-end ">
-                            <div class="form-check float-end">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-10 d-flex   align-items-center gap-2 mb-2">
-                            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 pe-0 border">
-                                <img width="100%" src="/Images/11.png" alt="">
-                            </div>
-                            <div class="col-xl-11 col-lg-11 col-sm-11 col-12 add-remove">
-                                <h5>Drive Me Glazy Lip Gloss</h5>
-                                <div class="d-flex gap-3">
-                                    <a href="">Add to cart</a>
-                                    <a href="">Remove</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-12 d-flex align-items-center text-center py-3">
-                            <h3 class="price col-6">Unit Price:</h3>
-                            <h4>Rs 400/-</h4>
-                        </div>
-
-                    </div>
 
 
-                </div>
-
-                <div class="col-xl-11 mt-4">
                     <div class="row">
-                        <div class="col-lg-10 col-md-9 col-12 col-sm-8 px-0">
-                            <div class="row mb-3">
-                                <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
-                                    <select class="form-select shadow-none">
-                                        <option selected>Action</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                      </select>
+                        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 mb-3">
+                            <div class="row mb-3 use-location-main ">
+                                <div class="col-md-7 col-sm-8 col-6 use-location">
+                                    <input type="text" placeholder="Search City">
+                                    <i class="fa-solid fa-location-dot errspan"></i>
                                 </div>
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2 wishlist-button">
-                                    <button class="w-100">Apply</button>
+                                <div class="col-md-5 col-sm-4  col-6">
+                                    <div class="row align-items-center">
+                                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2  ">
+                                            <i class="fa-solid fa-location-arrow"></i>
+                                        </div>
+                                        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 use-location-text text-center">
+                                            <a href=""> Use my location</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row border">
+                                <div class="col">
+                                    <div class="row border-bottom location-address">
+                                        <h5>Sephora Union Street</h5>
+                                        <p>2083 Union St San francisco, CA 94123 US</p>
+                                        <h6><span> 425-614-2704 </span> Open until 07:00 PM </h6>
+                                        <a href="">Store Details</a>
+                                    </div>
+                                    <div class="row border-bottom location-address">
+                                        <h5>Sephora Union Street</h5>
+                                        <p>2083 Union St San francisco, CA 94123 US</p>
+                                        <h6><span> 425-614-2704 </span> Open until 07:00 PM </h6>
+                                        <a href="">Store Details</a>
+                                    </div>
+                                    <div class="row border-bottom location-address">
+                                        <h5>Sephora Union Street</h5>
+                                        <p>2083 Union St San francisco, CA 94123 US</p>
+                                        <h6><span> 425-614-2704 </span> Open until 07:00 PM </h6>
+                                        <a href="">Store Details</a>
+                                    </div>
+                                    <div class="row border-bottom location-address">
+                                        <h5>Sephora Union Street</h5>
+                                        <p>2083 Union St San francisco, CA 94123 US</p>
+                                        <h6><span> 425-614-2704 </span> Open until 07:00 PM </h6>
+                                        <a href="">Store Details</a>
+                                    </div>
+
+
+
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 col-12 col-sm-4 text-end px-0 wishlist-button">
-                            <button class="w-100">Add all to cart</button>
+                        <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.833860597028!2d76.81728697433195!3d30.63863949017619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feb8457ffeca1%3A0x18a7949db781157c!2sSAMY%20eCommerce!5e0!3m2!1sen!2sin!4v1682668950601!5m2!1sen!2sin"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
 
 
@@ -371,7 +333,7 @@
                         </div>
                         <div class="col-2 pt-5 ms-2" style="border-bottom: 2px solid #fff">
                             <a href=" "><i class="fa-regular fa-paper-plane h4 text-white"></i
-        ></a>
+    ></a>
                         </div>
                     </div>
                 </div>

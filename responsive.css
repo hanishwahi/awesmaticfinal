@@ -1,8 +1,13 @@
-@media screen and (max-width:320px) {
+@media screen and (max-width:340px) {
     .search select {
         font-size: 12px;
     }
     .delivery p {
+        font-size: 13px;
+    }
+    /* find store  */
+    .use-location-text a {
+        text-decoration: none;
         font-size: 13px;
     }
 }
@@ -16,6 +21,13 @@
     }
     .width {
         width: 100%!important;
+    }
+    /* find store  */
+    .location-address a {
+        position: initial;
+    }
+    .find-store h1 {
+        font-size: 20px;
     }
 }
 
@@ -232,6 +244,31 @@
     .dropdown-toggle {
         font-size: 14px !important;
     }
+    /* privacy */
+    .privacy-policy-content h4 {
+        font-size: 22px;
+    }
+    .privacy-policy-content h2 {
+        font-size: 24px;
+    }
+    ol.list-group-numbered.ps-3 {
+        font-size: 13px;
+    }
+    .unordered-list {
+        font-size: 13px;
+    }
+    /* shipping & delivery  */
+    .shipping-delivery-content h2 {
+        font-size: 22px;
+    }
+    /* terms & conditions  */
+    .terms-conditions-content h2 {
+        font-size: 20px;
+    }
+    /* find a store  */
+    .use-location input {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width:576px) {
@@ -417,6 +454,10 @@
     }
     /* wishlist  */
     .wishlist h2 {
+        font-size: 14px;
+    }
+    /* find a store  */
+    .use-location-text a {
         font-size: 14px;
     }
 }
